@@ -24,7 +24,7 @@ Se desejar fazer alterações, é necessário instalar o [SASS](https://sass-lan
 
 ```bash
 # Clone este repositório.
-[$ git clone <https://github.com/Andersonmpereira/Desafio-Linx/>](https://github.com/Andersonmpereira/Desafio-Linx.git)
+$ git clone <https://github.com/Andersonmpereira/Desafio-Linx/>
 
 # Acesse a pasta do projeto.
 
