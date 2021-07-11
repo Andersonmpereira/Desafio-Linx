@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas - Teste Linx</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-bg"></div>
+        <div class="header-content">
+            <h1>
+                Tarefas a fazer
+            </h1>
+            <p>
+                Adicione e complete tarefas para organizar melhor a sua semana. :)
+            </p>
+        </div>
+    </header>
+    <main>
+        <section id="filter">
+            <div class="row">
+                <div class="adjustment">
+                    <input type="text" class="default-input" placeholder="Busque tarefas">
+                    <button type="button">Buscar</button>
+                </div>
+                <div class="adjustment">
+                    <label for="organize">Organizar por:</label>
+                    <select class="default-input" id="organize">
+                        <option default>Prazo</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section id="task-list">
+            <div class="row">
+                <div class="item">
+                    <div class="badge badge-alert">Prazo curto!</div>
+                    <div class="icon-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F04837"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="#F04837"/>
+                        </svg>
+                    </div>
+                    <img src="assets/img/image 3.png" alt="Imagem da tarefa">
+                    <div class="adjustment">
+                        <h4>Nome da tarefa</h4>
+                        <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                        <span class="deadline">
+                            Prazo:
+                            <span>00/00</span>
+                        </span>
+                        <button type="button" class="mb-done">Concluir</button>
+                        <span class="created">Data de inclusão: há 2 semanas</span>
+                        <div class="btn-group">
+                            <button type="button" class="done">Concluir</button>
+                            <button type="button" class="change">
+                                <img src="assets/img/Vector.svg" alt="">
+                                <span>Alterar prazo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F04837"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="#F04837"/>
+                        </svg>
+                    </div>
+                    <img src="assets/img/image 3.png" alt="Imagem da tarefa">
+                    <div class="adjustment">
+                        <h4>Nome da tarefa</h4>
+                        <p>Descrição da tarefa, o que deve ser feito.</p>
+                        <span class="deadline">
+                            Prazo:
+                            <span>00/00</span>
+                        </span>
+                        <button type="button" class="mb-done">Concluir</button>
+                        <span class="created">Data de inclusão: há 2 semanas</span>
+                        <div class="btn-group">
+                            <button type="button" class="done">Concluir</button>
+                            <button type="button" class="change">
+                                <img src="assets/img/Vector.svg" alt="">
+                                <span>Alterar prazo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F04837"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="#F04837"/>
+                        </svg>
+                    </div>
+                    <img src="assets/img/image 3.png" alt="Imagem da tarefa">
+                    <div class="adjustment">
+                        <h4>Nome da tarefa</h4>
+                        <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                        <span class="deadline">
+                            Prazo:
+                            <span>00/00</span>
+                        </span>
+                        <button type="button" class="mb-done">Concluir</button>
+                        <span class="created">Data de inclusão: há 2 semanas</span>
+                        <div class="btn-group">
+                            <button type="button" class="done">Concluir</button>
+                            <button type="button" class="change">
+                                <img src="assets/img/Vector.svg" alt="">
+                                <span>Alterar prazo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F04837"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="#F04837"/>
+                        </svg>
+                    </div>
+                    <img src="assets/img/image 3.png" alt="Imagem da tarefa">
+                    <div class="adjustment">
+                        <h4>Nome da tarefa</h4>
+                        <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                        <span class="deadline" style="display: none;">
+                            Prazo:
+                            <span>00/00</span>
+                        </span>
+                        <button type="button" class="mb-done">Concluir</button>
+                        <span class="created">Data de inclusão: há 2 semanas</span>
+                        <div class="btn-group">
+                            <button type="button" class="done">Concluir</button>
+                            <button type="button" class="change">
+                                <img src="assets/img/Vector.svg" alt="">
+                                <span>Alterar prazo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="icon-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F04837"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="#F04837"/>
+                        </svg>
+                    </div>
+                    <img src="assets/img/image 3.png" alt="Imagem da tarefa">
+                    <div class="adjustment">
+                        <h4>Nome da tarefa</h4>
+                        <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                        <span class="deadline">
+                            Prazo:
+                            <span>00/00</span>
+                        </span>
+                        <button type="button" class="mb-done">Concluir</button>
+                        <span class="created">Data de inclusão: há 2 semanas</span>
+                        <div class="btn-group">
+                            <button type="button" class="done">Concluir</button>
+                            <button type="button" class="change">
+                                <img src="assets/img/Vector.svg" alt="">
+                                <span>Alterar prazo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F04837"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="#F04837"/>
+                        </svg>
+                    </div>
+                    <img src="assets/img/image 3.png" alt="Imagem da tarefa">
+                    <div class="adjustment">
+                        <h4>Nome da tarefa</h4>
+                        <p>Descrição da tarefa, o que deve ser feito.</p>
+                        <span class="deadline">
+                            Prazo:
+                            <span>00/00</span>
+                        </span>
+                        <button type="button" class="mb-done">Concluir</button>
+                        <span class="created">Data de inclusão: há 2 semanas</span>
+                        <div class="btn-group">
+                            <button type="button" class="done">Concluir</button>
+                            <button type="button" class="change">
+                                <img src="assets/img/Vector.svg" alt="">
+                                <span>Alterar prazo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="badge badge-danger">Atrasado :(</div>
+                    <div class="icon-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F04837"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="#F04837"/>
+                        </svg>
+                    </div>
+                    <img src="assets/img/image 3.png" alt="Imagem da tarefa">
+                        <div class="adjustment">
+                        <h4>Nome da tarefa</h4>
+                        <p>Descrição da tarefa, o que deve ser feito.</p>
+                        <span class="deadline">
+                            Prazo:
+                            <span>00/00</span>
+                            <span>Atraso: 3 dias</span>
+                        </span>
+                        <button type="button" class="mb-done">Concluir</button>
+                        <span class="created">Data de inclusão: há 2 semanas</span>
+                        <div class="btn-group">
+                            <button type="button" class="done">Concluir</button>
+                            <button type="button" class="change">
+                                <img src="assets/img/Vector.svg" alt="">
+                                <span>Alterar prazo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F04837"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="#F04837"/>
+                        </svg>
+                    </div>
+                    <img src="assets/img/image 3.png" alt="Imagem da tarefa">
+                    <div class="adjustment">
+                        <h4>Nome da tarefa</h4>
+                        <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                        <span class="deadline" style="display: none;">
+                            Prazo:
+                            <span>00/00</span>
+                        </span>
+                        <button type="button" class="mb-done">Concluir</button>
+                        <span class="created">Data de inclusão: há 2 semanas</span>
+                        <div class="btn-group">
+                            <button type="button" class="done">Concluir</button>
+                            <button type="button" class="change">
+                                <img src="assets/img/Vector.svg" alt="">
+                                <span>Alterar prazo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <button type="button">VER MAIS +</button>
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="row">
+                <h3>Quer receber dicas para organizar melhor a sua rotina? Cadastre-se!</h3>
+            </div>
+            <div class="row">
+                <div class="group">
+                    <label for="">Nome</label>
+                    <input type="text" class="default-input" placeholder="Digite seu nome">
+                </div>
+                <div class="group">
+                    <label for="">E-mail</label>
+                    <input type="text" class="default-input" placeholder="Digite seu e-mail">
+                </div>
+                <button type="button">Cadastrar</button>
+            </div>
+        </section>
+        <section id="about">
+            <div class="row">
+                <div class="adjustment">
+                    <img src="assets/img/image 4.png" alt="Logo da empresa Linx">
+                </div>
+                <div class="adjustment">
+                    <p>
+                        A Linx é uma empresa brasileira especialista em tecnologia para o varejo. Líder no mercado de software de gestão, com 45,6% de market share do mercado varejista, conforme atesta o IDC.
+                    </p>
+                    <br>
+                    <p>
+                        Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.
+                    </p>
+                    <br>
+                    <p>
+                        Com capital aberto na B3 desde 2013, a Linx também se tornou a primeira empresa brasileira de software com capital aberto na NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores distribuídos entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da América. Para saber mais, acesse linx.com.br/imprensa.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="bg-footer row">
+            <span>
+                Testando suas habilidades em HTML e CSS.
+                <br>
+                Linx Impulse 2021
+                <br>
+                Teste ficcional!
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

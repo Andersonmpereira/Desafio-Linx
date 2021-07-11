@@ -1,0 +1,21 @@
+/*Functions*/
+
+@mixin defineFont ($fontSize, $fontWeight, $fontColor){
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $fontColor;
+}
+
+@mixin defineButton ($color, $background, $fontSize, $border, $fontWeight){
+    color: $color;
+    background: $background;
+    font-size: $fontSize;
+    border: $border;
+    font-weight: $fontWeight;
+}
+
+@mixin defineInput ($width, $height, $borderRadius){
+    width: $width;
+    height: $height;
+    border-radius: $borderRadius;
+}

@@ -1,0 +1,286 @@
+/*Imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import "./variables";
+@import "./functions";
+@import "./responsive";
+
+/*Global*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    font-size: $paragraph;
+}
+
+header{
+    height: 381px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+button{
+    border-radius: 8px;
+}
+// section{
+//     border: 1px solid green;
+// }
+
+/*Custom*/
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.default-input{
+    border: none;
+    background: $white;
+    color: $lightGray;
+    text-indent: 15px;
+    &:focus{
+        border: none;
+    }
+}
+.header-bg{
+    z-index: 0;
+    position: absolute;
+    top: -10px;
+    background-color: $purple;
+    width: 110%;
+    height: 381px;
+    transform: rotate(2deg);
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-color: $purple;
+
+    h1{
+        @include defineFont($title, 800 , $white );
+        margin-bottom: 28px;
+        margin-top: 140px;
+    }
+    p{
+        @include defineFont($sub, 400 , $white );
+    }
+}
+#filter .row{
+    background-color: $yellow;
+    margin: 56px 0px 71px 0px;
+    height: 85px;
+    border-radius: 8px;
+
+    label{
+        @include defineFont($paragraph, 600 , $white );
+        font-style: normal;
+        margin-right: 18px;
+    }
+    button{
+        @include defineButton($white, $lightPurple, $paragraph, none, 700);
+        height: 35px;
+        padding: 0 10px;
+        margin-left: -15px;
+    }
+    input{
+        @include defineInput(276px, $inputHeight, 8px 0 0 8px);
+    }
+    select{
+        @include defineInput(193px, $inputHeight, 8px);
+        background: #fff url('../img/Polygon.svg') 95.5% 50% no-repeat;
+        text-indent: 29px;
+    }
+}
+#newsletter{
+    background-color: $lighterGray;
+    width: 876px;
+    height: 122px;
+    border-radius: 8px;
+    margin: 100px auto;
+    padding: 20px 40px;
+
+    .row{
+        justify-content: normal;
+    }
+    .group{
+        margin-top: 7px;
+
+        input{
+            @include defineInput(348px, $inputHeight, 8px);
+            text-indent: 19px;
+        }
+    }
+    .group:first-child{
+        margin-right: 13px;
+
+        input{
+            @include defineInput(335px, $inputHeight, 8px);
+        }
+    }
+    label{
+        @include defineFont($smaller, 400, $lightGray);
+        display: block;
+    }
+    h3{
+        @include defineFont($paragraph, 700, $lightPurple );
+    }
+
+    button{
+        @include defineButton($white, $lightPurple, $paragraph, none, 700);
+        height: 35px;
+        width: 100px;
+        margin: 20px 0 0 8px;
+    }
+}
+#about{
+    width: 97%;
+    margin: 50px auto;
+
+    .row{
+        align-items: normal
+    }
+    p{
+        @include defineFont($paragraph, 400, $gray)
+    }
+    img{
+        margin-right: 54px;
+    }
+}
+#task-list{
+    img{
+        width: 100%;
+    }
+    h4{
+        @include defineFont($paragraph, 700, $gray);
+        margin: 5px 0;
+    }
+    p{
+        @include defineFont($smaller, 400, $black);
+        height: 48px;
+        width: 218px
+    }
+    button{
+        @include defineButton($white, $lightPurple, $taskBtn, none, 700);
+        height: 38px;
+        width: 197px;
+    }
+    .row{
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 360px;
+        margin-top: 24px;
+    }
+    .item{
+        background-color: $white;
+        height: 360px;
+        border: 1px solid $black;
+        border-radius: 14px;
+        padding: 15px;
+        margin: 0 0 35px 0;
+
+        &:hover{
+            height: 466px;
+            z-index: 1000;
+            box-shadow: 1px 5px 10px 0px #00000040;
+            .btn-group{
+                display: block;
+            }
+        }
+        .btn-group{
+            display: none;
+        }
+        button{
+            background-color: $purple;
+            display: inline-flex;
+            height: 40px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .done{
+            margin-top: 24px;
+        }
+        .mb-done{
+            display: none;
+        }
+        .change{
+            background: $red;
+            margin-top: 8px;
+        }
+        .change img{
+            width: 20px;
+            height: 20px;
+            margin-right: 7px;
+        }
+        .badge{
+            @include defineFont($smaller, 700, $white);
+            position: absolute;
+            height: 29px;
+            width: 102px;
+            padding: 5px 0 0 17px;
+            border-radius: 0px 8px 8px 0;
+            margin-top: 6px;
+            margin-left: -24px;
+        }
+        .badge-alert{
+            background-color: $purple;
+        }
+        .badge-danger{
+            background-color: $red;
+        }
+        .icon-time svg{
+            display: none;
+        }
+    }
+    .item:nth-child(4){
+        margin: 0 0 35px 0;
+    }
+    .more{
+        text-align: center;
+        margin: 50px auto;
+    }
+    .deadline{
+        @include defineFont($smaller, 700, $black);
+        display: block;
+        margin: 8px 0 0 0;
+
+        span{
+            @include defineFont($sub, 700, $red);
+        }
+        span:nth-child(2){
+            @include defineFont($smaller, 400, $red);
+            margin-left: 13px;
+        }
+    }
+    .created{
+        @include defineFont(0.625rem, 400, $gray);
+        margin: 5px 0 0 0;
+    }
+}
+.bg-footer{
+    background-color: $purple;
+    height: 126px;
+    text-align: center;
+    span{
+        @include defineFont($smaller, 400, $white)
+    }
+}
