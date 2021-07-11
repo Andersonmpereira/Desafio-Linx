@@ -12,6 +12,7 @@
   header {
     height: auto !important;
     width: 95% !important;
+    margin: 0 auto;
   }
   .header-bg {
     height: 160px !important;
@@ -180,6 +181,11 @@ button {
 }
 
 /*Custom*/
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;

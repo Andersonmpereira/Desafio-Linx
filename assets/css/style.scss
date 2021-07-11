@@ -40,6 +40,10 @@ button{
 // }
 
 /*Custom*/
+.wrapper{
+    position: relative;
+    overflow-x: hidden;
+}
 .row{
     display: flex;
     flex-wrap: nowrap;
