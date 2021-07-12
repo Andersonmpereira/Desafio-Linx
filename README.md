@@ -41,9 +41,7 @@ Mas no geral foi um desafio tranquilo e divertido.
 
 Tive que relembrar algumas coisas relacionadas a [SASS](https://sass-lang.com/), pois não utilizava com frequencia.
 
-Confesso que quase cai na tentação de utilizar [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) para manipulação de elementos, como por exemplo, quando exibe os botões da tarefa ao passar o mouse.
+Confesso que quase cai na tentação de utilizar [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) para manipulação de elementos, como por exemplo, quando exibe os botões da tarefa ao passar o mouse, teria a adicionado uma função ```onmouseover``` para fazer essa transição de forma mais suave.
 
 Acredito que minha maior dificuldade foi quando estava prestes a finalizar, percebi um erro obvio onde na versão mobile o ```header``` estava dando ```scroll``` na pagina, para resolver tive que colocar uma ```div``` dentro do header para que respeitasse o ```overflow-x: hidden```.
-
-## 🌟 CONSIDERAÇÕES FINAIS
 
