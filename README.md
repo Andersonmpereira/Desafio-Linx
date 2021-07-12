@@ -15,10 +15,12 @@ O desafio consiste no desenvolvimento de uma página responsiva com base nos lay
 ## ⌨️ INSTALAÇÃO
 
 ### Pré-requisitos
-	
-O único pré-requisito para visualização, é um browser moderno para que possa visualizar todos os recursos inseridos.
+
+O único pré-requisito para visualização, é um browser moderno para que possa ver todos os recursos inseridos.
 
 Se desejar fazer alterações, é necessário instalar o [SASS](https://sass-lang.com/install) para alterar a estilização.
+
+💻📱 você também pode pré visualizar clicando [aqui](https://)
 
 ### 💻 Executando
 
@@ -32,6 +34,16 @@ $ git clone <https://github.com/Andersonmpereira/Desafio-Linx/>
 
 ```
 
-## 💬 PROBLEMAS E SOLUÇÕES
+## 💬 OBSERVAÇÕES DO CANDIDATO
+
+O projeto tinha uma estrutura simples, porém rico em detalhes. Exigia conhecimento em [flexbox](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox), necessidade de adaptações na responsividade através de [media queries](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Media_Queries/Using_media_queries), muitos elementos com largura/altura fixa.
+Mas no geral foi um desafio tranquilo e empolgante, confesso que me diverti fazendo.
+
+Tive que relembrar algumas coisas relacionadas a [SASS](https://sass-lang.com/), pois não utilizava com frequencia.
+
+Confesso que quase cai na tentação de utilizar [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) para manipulação de elementos, como por exemplo, quando exibe os botões da tarefa ao passar o mouse.
+
+Acredito que minha maior dificuldade foi quando estava prestes a finalizar, percebi que na versão mobile o 'header' estava dandro 'scroll' na pagina, para resolver tive que colocar uma 'div' dentro do header para que respeitasse o 'overflow-x: hidden'.
 
 ## 🌟 CONSIDERAÇÕES FINAIS
+
