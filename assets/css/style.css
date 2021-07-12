@@ -108,6 +108,7 @@
     width: 100% !important;
     height: 30px !important;
     margin-bottom: 6px !important;
+    margin-top: 11px !important;
   }
   #task-list .item .badge {
     margin-left: -20px !important;
@@ -125,6 +126,10 @@
     width: 20px !important;
     height: 20px !important;
     margin-right: 24px !important;
+  }
+  #task-list .more {
+    margin-top: 47px !important;
+    margin-bottom: 64px !important;
   }
   #about {
     width: 100%;
@@ -167,8 +172,8 @@ header {
 
 select {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 main {
@@ -178,6 +183,13 @@ main {
 
 button {
   border-radius: 8px;
+}
+
+textarea:focus, input:focus, select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
 /*Custom*/
@@ -211,10 +223,6 @@ button {
   background: #fff;
   color: #757575;
   text-indent: 15px;
-}
-
-.default-input:focus {
-  border: none;
 }
 
 .header-bg {
@@ -283,6 +291,10 @@ button {
   height: 35px;
   padding: 0 10px;
   margin-left: -15px;
+}
+
+#filter .row button:hover {
+  background-color: #422755;
 }
 
 #filter .row input {
@@ -359,6 +371,10 @@ button {
   margin: 20px 0 0 8px;
 }
 
+#newsletter button:hover {
+  background-color: #422755;
+}
+
 #about {
   width: 97%;
   margin: 50px auto;
@@ -407,6 +423,10 @@ button {
   font-weight: 700;
   height: 38px;
   width: 197px;
+}
+
+#task-list button:hover {
+  background-color: #422755;
 }
 
 #task-list .row {

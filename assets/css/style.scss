@@ -24,8 +24,6 @@ header{
 }
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
 }
 main{
@@ -35,11 +33,14 @@ main{
 button{
     border-radius: 8px;
 }
-// section{
-//     border: 1px solid green;
-// }
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
 
 /*Custom*/
+
 .wrapper{
     position: relative;
     overflow-x: hidden;
@@ -57,9 +58,6 @@ button{
     background: $white;
     color: $lightGray;
     text-indent: 15px;
-    &:focus{
-        border: none;
-    }
 }
 .header-bg{
     z-index: 0;
@@ -104,6 +102,9 @@ button{
         height: 35px;
         padding: 0 10px;
         margin-left: -15px;
+        &:hover{
+            background-color: $purple;
+        }
     }
     input{
         @include defineInput(276px, $inputHeight, 8px 0 0 8px);
@@ -153,6 +154,10 @@ button{
         height: 35px;
         width: 100px;
         margin: 20px 0 0 8px;
+
+        &:hover{
+            background-color: $purple;
+        }
     }
 }
 #about{
@@ -186,6 +191,10 @@ button{
         @include defineButton($white, $lightPurple, $taskBtn, none, 700);
         height: 38px;
         width: 197px;
+
+        &:hover{
+            background-color: $purple;
+        }
     }
     .row{
         align-items: flex-start;
