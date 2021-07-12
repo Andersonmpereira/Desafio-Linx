@@ -39,9 +39,9 @@ $ git clone <https://github.com/Andersonmpereira/Desafio-Linx/>
 O projeto tinha uma estrutura simples, porém rico em detalhes. Exigia conhecimento em [flexbox](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox), necessidade de adaptações na responsividade através de [media queries](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Media_Queries/Using_media_queries), muitos elementos com largura/altura fixa.
 Mas no geral foi um desafio tranquilo e divertido.
 
-Tive que relembrar algumas coisas relacionadas a [SASS](https://sass-lang.com/), pois não utilizava com frequencia.
+Tive que relembrar algumas coisas relacionadas a [SASS](https://sass-lang.com/), pois não utilizava com frequência.
 
 Confesso que quase cai na tentação de utilizar [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) para manipulação de elementos, como por exemplo, quando exibe os botões da tarefa ao passar o mouse, teria a adicionado uma função ```onmouseover``` para fazer essa transição de forma mais suave.
 
-Acredito que minha maior dificuldade foi quando estava prestes a finalizar, percebi um erro obvio onde na versão mobile o ```header``` estava dando ```scroll``` na pagina, para resolver tive que colocar uma ```div``` dentro do header para que respeitasse o ```overflow-x: hidden```.
+Acredito que minha maior dificuldade foi quando estava prestes a finalizar, percebi um erro obvio onde na versão mobile o ```header``` estava dando ```scroll``` na página, para resolver tive que colocar uma ```div``` dentro do header para que respeitasse o ```overflow-x: hidden```.
 
