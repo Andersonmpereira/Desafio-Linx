@@ -20,8 +20,6 @@ O único pré-requisito para visualização, é um browser moderno para que poss
 
 Se desejar fazer alterações, é necessário instalar o [SASS](https://sass-lang.com/install) para alterar a estilização.
 
-💻📱 você também pode pré visualizar clicando [aqui](https://)
-
 ### 💻 Executando
 
 ```bash
