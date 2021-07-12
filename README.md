@@ -43,7 +43,7 @@ Tive que relembrar algumas coisas relacionadas a [SASS](https://sass-lang.com/),
 
 Confesso que quase cai na tentação de utilizar [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) para manipulação de elementos, como por exemplo, quando exibe os botões da tarefa ao passar o mouse.
 
-Acredito que minha maior dificuldade foi quando estava prestes a finalizar, percebi que na versão mobile o 'header' estava dandro 'scroll' na pagina, para resolver tive que colocar uma 'div' dentro do header para que respeitasse o 'overflow-x: hidden'.
+Acredito que minha maior dificuldade foi quando estava prestes a finalizar, percebi que na versão mobile o ```header``` estava dandro ```scroll``` na pagina, para resolver tive que colocar uma ```div``` dentro do header para que respeitasse o ```overflow-x: hidden```.
 
 ## 🌟 CONSIDERAÇÕES FINAIS
 
